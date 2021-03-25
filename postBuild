@@ -1,4 +1,5 @@
 mkdir ${HOME}/fmrwhy && curl -SL https://github.com/jsheunis/fMRwhy/archive/refs/tags/v0.0.2.tar.gz | tar -xzC ${HOME}/fmrwhy --strip-components 1
+mkdir ${HOME}/spm12 && curl -SL https://github.com/spm/spm12/archive/r7771.tar.gz | tar -xzC ${HOME}/spm12 --strip-components 1
 mkdir ${HOME}/dicm2nii && curl -SL https://github.com/jsheunis/dicm2nii/archive/v0.2.tar.gz | tar -xzC ${HOME}/dicm2nii --strip-components 1
 mkdir ${HOME}/bids && curl -SL https://github.com/bids-standard/bids-matlab/archive/main.tar.gz | tar -xzC ${HOME}/bids --strip-components 1
 mkdir ${HOME}/tapas && curl -SL https://github.com/translationalneuromodeling/tapas/archive/refs/tags/v4.0.0.tar.gz | tar -xzC ${HOME}/tapas --strip-components 1
