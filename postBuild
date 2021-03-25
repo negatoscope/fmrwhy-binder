@@ -20,7 +20,7 @@ octave --no-gui --eval "addpath (genpath(fullfile (getenv (\"HOME\"), \"fmrwhy\"
 octave --no-gui --eval "addpath (genpath(fullfile (getenv (\"HOME\"), \"dicm2nii\"))); savepath ();"
 octave --no-gui --eval "addpath (genpath(fullfile (getenv (\"HOME\"), \"bids\"))); savepath ();"
 octave --no-gui --eval "addpath (genpath(fullfile (getenv (\"HOME\"), \"tapas\"))); savepath ();"
-octave --no-gui --eval "addpath (genpath(fullfile (getenv (\"HOME\"), \"raincloudplots\")); savepath ();"
+octave --no-gui --eval "addpath (genpath(fullfile (getenv (\"HOME\"), \"raincloudplots\"))); savepath ();"
 octave --no-gui --eval "addpath (genpath(fullfile (getenv (\"HOME\"), \"spm12\"))); savepath ();"
 
 aws s3 sync --no-sign-request s3://openneuro.org/ds002748 ds002748-download/ --exclude "*" --include "sub-01/*"
