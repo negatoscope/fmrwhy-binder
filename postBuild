@@ -24,4 +24,4 @@ octave --no-gui --eval "addpath (genpath(fullfile (getenv (\"HOME\"), \"tapas\")
 octave --no-gui --eval "addpath (genpath(fullfile (getenv (\"HOME\"), \"raincloudplots\"))); savepath ();"
 octave --no-gui --eval "addpath (fullfile (getenv (\"HOME\"), \"spm12\")); savepath ();"
 
-aws s3 sync --no-sign-request s3://openneuro.org/ds002748 ds002748-download/ --exclude "*" --include "sub-01/*"
+aws s3 sync --no-sign-request s3://openneuro.org/ds002748 ds002748-download/ --exclude "*" --include "sub-01/*" --include "dataset_description.json"
