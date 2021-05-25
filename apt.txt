@@ -1,6 +1,6 @@
 curl
 octave
-octave-image
+octave-statistics
 liboctave-dev
 gnuplot
 ghostscript
