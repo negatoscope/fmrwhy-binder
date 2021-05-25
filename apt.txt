@@ -1,6 +1,5 @@
 curl
 octave
-octave-tablicious
 liboctave-dev
 gnuplot
 ghostscript
