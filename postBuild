@@ -1,4 +1,5 @@
 mkdir ${HOME}/fmrwhy && curl -SL https://github.com/negatoscope/fMRwhy/archive/refs/tags/v0.0.21.tar.gz | tar -xzC ${HOME}/fmrwhy --strip-components 1
+mkdir ${HOME}/tablicious && curl -SL https://github.com/apjanke/octave-tablicious/releases/download/v0.3.5/tablicious-0.3.5.tar.gz | tar -xzC ${HOME}/tablicious --strip-components 1
 mkdir ${HOME}/spm12 && curl -SL https://github.com/spm/spm12/archive/r7771.tar.gz | tar -xzC ${HOME}/spm12 --strip-components 1
 mkdir ${HOME}/dicm2nii && curl -SL https://github.com/jsheunis/dicm2nii/archive/v0.2.tar.gz | tar -xzC ${HOME}/dicm2nii --strip-components 1
 mkdir ${HOME}/bids-matlab && curl -SL https://github.com/bids-standard/bids-matlab/archive/master.tar.gz | tar -xzC ${HOME}/bids-matlab --strip-components 1
@@ -18,6 +19,7 @@ find . -name "file2mat*.*" -print0 | xargs -0 -I{} find '{}' \! -name "*.mex" -d
 
 cd ${HOME}
 octave --no-gui --eval "addpath (genpath(fullfile (getenv (\"HOME\"), \"fmrwhy\"))); savepath ();"
+octave --no-gui --eval "addpath (genpath(fullfile (getenv (\"HOME\"), \"tablicious\"))); savepath ();"
 octave --no-gui --eval "addpath (genpath(fullfile (getenv (\"HOME\"), \"dicm2nii\"))); savepath ();"
 octave --no-gui --eval "addpath (genpath(fullfile (getenv (\"HOME\"), \"bids-matlab\"))); savepath ();"
 octave --no-gui --eval "addpath (genpath(fullfile (getenv (\"HOME\"), \"tapas\"))); savepath ();"
