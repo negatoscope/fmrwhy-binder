@@ -1,4 +1,4 @@
-mkdir ${HOME}/fmrwhy && curl -SL https://github.com/negatoscope/fMRwhy/archive/refs/tags/v0.0.21.tar.gz | tar -xzC ${HOME}/fmrwhy --strip-components 1
+mkdir ${HOME}/fmrwhy && curl -SL https://github.com/negatoscope/fMRwhy/archive/refs/tags/v0.0.22.tar.gz | tar -xzC ${HOME}/fmrwhy --strip-components 1
 mkdir ${HOME}/tablicious && curl -SL https://github.com/apjanke/octave-tablicious/releases/download/v0.3.5/tablicious-0.3.5.tar.gz | tar -xzC ${HOME}/tablicious --strip-components 1
 mkdir ${HOME}/spm12 && curl -SL https://github.com/spm/spm12/archive/r7771.tar.gz | tar -xzC ${HOME}/spm12 --strip-components 1
 mkdir ${HOME}/dicm2nii && curl -SL https://github.com/jsheunis/dicm2nii/archive/v0.2.tar.gz | tar -xzC ${HOME}/dicm2nii --strip-components 1
